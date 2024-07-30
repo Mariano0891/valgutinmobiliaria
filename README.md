@@ -6,3 +6,15 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Base template for NavBar and Footer from DaisyUI
+Template for NavCenterMenu from hover.dev which uses framer.com
+Icons from Icons8
+
+TO DO:
+- Adjust V&G logo size to make it responsive (done)
+- Look posibility of making logo and title as a component
+- Set the collapsible menu items so that they can only be opened one at a time.
+- Define new navbar sticky for when you scroll the page - Make it more thin so it doesn´t reduce de content view.
+
+
