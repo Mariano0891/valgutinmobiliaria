@@ -32,7 +32,7 @@ export const CarouselHome = () => {
 
   return (
     <div className="max-w-[1400px] h-[600px] w-full m-auto">
-        <div style={{backgroundImage: `url(${images[currentIndex].url})`}} className="w-full h-full bg-center bg-cover flex items-center">
+        <div style={{backgroundImage: `url(${images[currentIndex].url})`}} className="w-full h-full bg-center bg-cover duration-500 ease-linear flex items-center">
             <FrontFilter/>
         </div>
     </div>
