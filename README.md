@@ -16,5 +16,6 @@ TO DO:
 - Look posibility of making logo and title as a component
 - Set the collapsible menu items so that they can only be opened one at a time.
 - Define new navbar sticky for when you scroll the page - Make it more thin so it doesn´t reduce de content view.
+- Finish stablishing the filter component on homeScreen.
 
 

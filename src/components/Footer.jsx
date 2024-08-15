@@ -23,7 +23,7 @@ export const Footer = () => {
             <h6 className="footer-title">CONTACTO</h6>
             <a href="https://wa.me/543513157171" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>+54 351 3157171</a>
             <a href="https://wa.me/543516770964" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>+54 351 6770964</a>
-            <a href="mailto:valgutpropiedades@gmail.com?subject=Consulta general" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ mail } alt="mail" className='max-h-6'/>valgutpropiedades@gmail.com</a>
+            <a href="mailto:ValGut.propiedades@gmail.com?subject=Consulta general" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ mail } alt="mail" className='max-h-6'/>ValGut.propiedades@gmail.com</a>
         </nav>
         <nav>
             <h6 className="footer-title">LINKS</h6>

@@ -10,8 +10,8 @@ export default {
       colors: {
         one: "#252525",
         two: "#d9d9d9",
-        three: "#0260A9",
-        four: "#0385CD",
+        three: "#6E6E6E",
+        four: "#DEDEDE",
         five: "#04AEE8",
         six: "#06DEFA"
       }
