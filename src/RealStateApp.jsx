@@ -10,6 +10,7 @@ export const RealStateApp = () => {
         <Routes>
             <Route>
               <Route path="/" element={<Home />} />
+              <Route path="/property/:id" element={<propertyDetailContainer />} />
             </Route>
         </Routes>
         <Footer></Footer>

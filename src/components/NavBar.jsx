@@ -8,7 +8,7 @@ import { NavCenterMenu } from './NavCenterMenu'
 
 export const NavBar = () => {
   return (
-    <div className="navbar bg-one text-two h-28">
+    <div className="navbar bg-one text-two h-28 sticky top-0 z-10">
         <div className="navbar-start">
             <a href="/" className="text-lg flex items-center">
                 <img src={logo} alt="V&G" className="max-w-20 md:max-w-32"/>
