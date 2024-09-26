@@ -3,21 +3,21 @@ import rooms from '../assets/imgicons/bedrooms.png'
 import bath from '../assets/imgicons/bathroom.png'
 import garage from '../assets/imgicons/garage.png'
 import area from '../assets/imgicons/area.png'
-import { IoIosArrowDropright, IoIosArrowDropleft, IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
+import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 
 export const PreviewCard = ({id, images, creditAb, dollar, price, title, neighborhood, bedrooms, bathrooms, garages, totalArea}) => {
 
     const cardSlides = Array.from(images)
 
-    const [currentIndex, setcurrentIndex] = useState(0)
+    const [currentIndex, setCurrentIndex] = useState(0)
 
     const prevCardSlide = () => {
-        setcurrentIndex((prevIndex) => (prevIndex === 0 ? cardSlides.length -1 : prevIndex - 1))
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? cardSlides.length -1 : prevIndex - 1))
     }
 
     const nextCardSlide = () => {
-        setcurrentIndex((prevIndex) => (prevIndex === cardSlides.length -1 ? 0 : prevIndex + 1))
+        setCurrentIndex((prevIndex) => (prevIndex === cardSlides.length -1 ? 0 : prevIndex + 1))
     }
 
     const Arrow = ({ direction , onClick }) => (
@@ -79,7 +79,7 @@ export const PreviewCard = ({id, images, creditAb, dollar, price, title, neighbo
                 <></>
             }
         </div>
-        <Link to={`/`} className='flex justify-center my-1'>
+        <Link to={`/property/${id}`} className='flex justify-center my-1'>
                 <button className='btn bg-one text-two font-bold w-56 hover:text-one'>MAS INFO</button>
         </Link>
     </div>

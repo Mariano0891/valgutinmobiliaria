@@ -5,6 +5,7 @@ import facebook from '../assets/imgsocmed/facebook.png'
 import youtube from '../assets/imgsocmed/youtube.png'
 import whatsapp from '../assets/imgsocmed/whatsapp.png'
 import { NavCenterMenu } from './NavCenterMenu'
+import contactData from '../assets/contactData.json'
 
 export const NavBar = () => {
   return (
@@ -80,14 +81,14 @@ export const NavBar = () => {
                 <div className="flex my-2">
                     <div><LanguageSel></LanguageSel></div>
                     <div className='flex ml-5'>
-                        <a href="" target="_blank" rel="noopener noreferrer" className='mx-1 max-w-6'><img src={ instagram } alt="Instagram" /></a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className='mx-1 max-w-6'><img src={ facebook } alt="Facebook" /></a>
-                        <a href="" target="_blank" rel="noopener noreferrer" className='mx-1 max-w-6'><img src={ youtube } alt="Youtube" /></a>
+                        <a href={contactData.instagram} target="_blank" rel="noopener noreferrer" className='mx-1 max-w-6'><img src={ instagram } alt="Instagram" /></a>
+                        <a href={contactData.facebook} target="_blank" rel="noopener noreferrer" className='mx-1 max-w-6'><img src={ facebook } alt="Facebook" /></a>
+                        <a href={contactData.youtube} target="_blank" rel="noopener noreferrer" className='mx-1 max-w-6'><img src={ youtube } alt="Youtube" /></a>
                     </div>
                 </div>
                 <div className='flex my-2 text-sm'>
-                    <a href="https://wa.me/543513157171" target="_blank" rel="noopener noreferrer" className='flex link link-hover items-center'><img src={ whatsapp } alt="Whatsapp" className='max-h-5'/>+54 351 3157171</a>
-                    <a href="https://wa.me/543516770964" target="_blank" rel="noopener noreferrer" className='flex ml-2 link link-hover items-center'><img src={ whatsapp } alt="Whatsapp" className='max-h-5'/>+54 351 6770964</a>
+                    <a href={"https://wa.me/"+(contactData.celFeli).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex link link-hover items-center'><img src={ whatsapp } alt="Whatsapp" className='max-h-5'/>+{contactData.celFeli}</a>
+                    <a href={"https://wa.me/"+(contactData.celPaola).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex ml-2 link link-hover items-center'><img src={ whatsapp } alt="Whatsapp" className='max-h-5'/>+{contactData.celPaola}</a>
                 </div>
             </div>
         </div>

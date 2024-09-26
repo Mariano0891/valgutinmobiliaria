@@ -4,6 +4,7 @@ import mail from '../assets/imgsocmed/mail.png'
 import instagram from '../assets/imgsocmed/instagram.png'
 import facebook from '../assets/imgsocmed/facebook.png'
 import youtube from '../assets/imgsocmed/youtube.png'
+import contactData from '../assets/contactData.json'
 
 export const Footer = () => {
   return (
@@ -21,9 +22,9 @@ export const Footer = () => {
         </aside>
         <nav>
             <h6 className="footer-title">CONTACTO</h6>
-            <a href="https://wa.me/543513157171" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>+54 351 3157171</a>
-            <a href="https://wa.me/543516770964" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>+54 351 6770964</a>
-            <a href="mailto:ValGut.propiedades@gmail.com?subject=Consulta general" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ mail } alt="mail" className='max-h-6'/>ValGut.propiedades@gmail.com</a>
+            <a href={"https://wa.me/"+(contactData.celFeli).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celFeli}</a>
+            <a href={"https://wa.me/"+(contactData.celPaola).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celPaola}</a>
+            <a href={"mailto:"+contactData.email+"?subject=Consulta general"} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ mail } alt="mail" className='max-h-6'/>{contactData.email}</a>
         </nav>
         <nav>
             <h6 className="footer-title">LINKS</h6>
@@ -31,9 +32,9 @@ export const Footer = () => {
             <a href="#" className="link link-hover">ALQUILERES</a>
             <a href="#" className="link link-hover">TEMPORARIOS</a>
             <div className='flex'>
-                <a href="" target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ instagram } alt="Instagram" /></a>
-                <a href="" target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ facebook } alt="Facebook" /></a>
-                <a href="" target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ youtube } alt="Youtube" /></a>
+                <a href={contactData.instagram} target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ instagram } alt="Instagram" /></a>
+                <a href={contactData.facebook} target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ facebook } alt="Facebook" /></a>
+                <a href={contactData.youtube} target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ youtube } alt="Youtube" /></a>
             </div>
         </nav>
     </footer>
