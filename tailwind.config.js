@@ -12,7 +12,7 @@ export default {
         two: "#d9d9d9",
         three: "#6E6E6E",
         four: "#DEDEDE",
-        five: "#04AEE8",
+        five: "#F5F5F5",
         six: "#06DEFA"
       }
     },

@@ -17,8 +17,9 @@ TO DO:
 - Set the collapsible menu items so that they can only be opened one at a time.
 - Define new navbar sticky for when you scroll the page - Make it more thin so it doesn´t reduce de content view.
 - Finish stablishing the filter component on homeScreen.
-- Set a component to stablish globaly phone numbers, emails and social media in order for any change on them would apply directly in every part of the code.
-- Stablish a manual image carrousel in the previewCard using useState as used in the CarouselHome component.
+- Set a component to stablish globaly phone numbers, emails and social media in order for any change on them would apply directly in every part of the code (done).
+- Stablish a manual image carrousel in the previewCard using useState as used in the CarouselHome component (done).
+- Use react-image-gallery for when we select to expand the image gallery. 
 
 
 

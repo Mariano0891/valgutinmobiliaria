@@ -86,6 +86,9 @@ export const Footer = () => {
                 <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
             </div>
         </aside>
+        {/*<div>
+            <a target="_blank" href="https://icons8.com/icon/ACRPeBQW8rQr/neighborhood">Iconos de Icons8</a>
+        </div>*/}
     </footer>
   </>
   )
