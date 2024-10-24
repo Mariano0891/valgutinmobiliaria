@@ -43,8 +43,12 @@ export const PreviewCard = ({id, images, creditAb, dollar, price, title, neighbo
                 <img src={favEmpty} alt="" className='self-start justify-self-end m-2 max-h-10'/>
             </div>*/}
             <div className='place-self-end text-white font-extrabold text-3xl p-2 flex'>
-                {dollar ? <p>USD</p> : <p>ARS</p>}
-                <p className='pl-2'>{price}</p>
+                {price == 0 ?
+                <p>CONSULTAR</p> :
+                <div className='flex'>
+                    {dollar ? <p>USD</p> : <p>ARS</p>}
+                    <p className='pl-2'>{price}</p>
+                </div>}
             </div>
         </div>
         <h3 className='text-center text-xl font-bold text-one'>{title}</h3>

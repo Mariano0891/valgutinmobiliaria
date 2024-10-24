@@ -54,9 +54,10 @@ export const Footer = () => {
             <a href="#" className="link link-hover">ALQUILERES</a>
             <a href="#" className="link link-hover">TEMPORARIOS</a>
         </nav>
-        <nav className="grid grid-col gap-2 -my-4">
-            <a href="https://wa.me/543513157171" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>+54 351 3157171</a>
-            <a href="https://wa.me/543516770964" target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>+54 351 6770964</a>
+        <nav className="grid grid-col gap-2 -mb-6 -mt-4">
+            <a href={"https://wa.me/"+(contactData.celFeli).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celFeli}</a>
+            <a href={"https://wa.me/"+(contactData.celPaola).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celPaola}</a>
+            <a href={"mailto:"+contactData.email+"?subject=Consulta general"} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ mail } alt="mail" className='max-h-6'/>{contactData.email}</a>
         </nav>
 
         <nav>

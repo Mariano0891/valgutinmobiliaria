@@ -1,31 +1,37 @@
-import { DetailCarousel } from "./DetailCarousel"
-import city from "../assets/imgicons/city.png"
-import neighborhood from "../assets/imgicons/neighborhood.png"
+import { DetailCarousel } from "./propertyDetailComponents/DetailCarousel"
+import { Characteristics } from "./propertyDetailComponents/Characteristics"
+import { Description } from "./propertyDetailComponents/Description"
+import { PropertyIdentification } from "./propertyDetailComponents/PropertyIdentification"
+import { LocationMap } from "./propertyDetailComponents/LocationMap"
+import { Contact } from "./propertyDetailComponents/Contact"
+
 
 
 export const PropertyDetail = ({property}) => {
     console.log({property})
   return (
     <div className="">
-        <h2 className='text-center font-extrabold text-xl text-three m-4'>{(property.title).toUpperCase()}</h2>
-        <DetailCarousel images={property.images} video={property.video}/>
-        <div className='bg-five w-11/12 max-w-[700px] mx-4'>
-          <h3 className='p-4 font-bold'>CARACTERISTICAS</h3>
-          <div className='flex flex-wrap'>
-            {city &&
-              <div className='flex items-center p-1 mx-2'>
-                <img src={city} alt="ciudad" className='max-h-10'/>
-                <p className='p-2 text-lg'>{property.city}</p>
-              </div>
-            }
-            {neighborhood &&
-              <div className='flex items-center p-1 mx-2'>
-                <img src={neighborhood} alt="barrio" className='max-h-10'/>
-                <p className='p-2 text-lg'>{property.neighborhood}</p>
-              </div>
-            }
-          </div>
+      <h2 className='text-center font-extrabold text-xl text-three m-4'>{(property.title).toUpperCase()}</h2>
+      <div className="grid justify-center gap-4">
+        <div className="w-full">
+          <DetailCarousel images={property.images} video={property.video}/>
         </div>
+        <div className="w-full">
+          <PropertyIdentification property={property}/>   
+        </div>
+        <div className="w-full">
+          <LocationMap property={property}/>   
+        </div>
+        <div className="w-full">
+          <Characteristics property={property} />
+        </div>
+        <div className="w-full">
+          <Description property={property}/>         
+        </div>
+        <div className="w-full">
+          <Contact property={property}/>         
+        </div>
+      </div>        
     </div>
   )
 }
