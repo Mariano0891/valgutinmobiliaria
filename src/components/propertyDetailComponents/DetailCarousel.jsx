@@ -45,7 +45,7 @@ export const DetailCarousel = ({images, video}) => {
     }
 
   return (
-    <div className='w-full max-w-[700px] overflow-hidden'>
+    <div className='w-screen max-w-[700px] overflow-hidden px-2'>
         {/*Gallery selection Tab*/}
         <div data-video={video.length > 0} className='bg-five border-five border-2 h-[30px] w-3/6 md:w-2/6 flex border-b-0 data-[video="false"]:w-1/5'>
             <div onClick={() => showGallery("photo")} data-gallery={gallery==="photo"} data-video={video.length > 0} className='w-1/2 data-[video="false"]:w-full h-full flex justify-evenly items-center data-[gallery="false"]:bg-white data-[gallery="false"]:cursor-pointer'>

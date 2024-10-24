@@ -13,22 +13,22 @@ export const PropertyDetail = ({property}) => {
     <div className="">
       <h2 className='text-center font-extrabold text-xl text-three m-4'>{(property.title).toUpperCase()}</h2>
       <div className="grid justify-center gap-4">
-        <div className="w-full">
+        <div className="">
           <DetailCarousel images={property.images} video={property.video}/>
         </div>
-        <div className="w-full">
+        <div className="px-2">
           <PropertyIdentification property={property}/>   
         </div>
-        <div className="w-full">
+        <div className="px-2">
           <LocationMap property={property}/>   
         </div>
-        <div className="w-full">
+        <div className="px-2">
           <Characteristics property={property} />
         </div>
-        <div className="w-full">
+        <div className="px-2">
           <Description property={property}/>         
         </div>
-        <div className="w-full">
+        <div className="px-2">
           <Contact property={property}/>         
         </div>
       </div>        
