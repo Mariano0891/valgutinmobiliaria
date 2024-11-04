@@ -4,13 +4,13 @@ import { AnimatePresence, motion } from "framer-motion";
 export const NavCenterMenu = () => {
   return (
     <div className="flex justify-center text-base">
-      <FlyoutLink href="#" FlyoutContent={salesContent}>
+      <FlyoutLink href="/transaction/venta" FlyoutContent={salesContent}>
         VENTAS
       </FlyoutLink>
-      <FlyoutLink href="#" FlyoutContent={rentContent}>
+      <FlyoutLink href="/transaction/alquiler" FlyoutContent={rentContent}>
         ALQUILERES
       </FlyoutLink>
-      <FlyoutLink href="#" FlyoutContent={tempContent}>
+      <FlyoutLink href="/transaction/temporario" FlyoutContent={tempContent}>
         TEMPORARIOS
       </FlyoutLink>
       <FlyoutLink href="#" FlyoutContent={contactContent}>
@@ -64,19 +64,19 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
     return (
       <div className="min-w-[200px] bg-one p-2 rounded-xl shadow-xl text-center text-base">
         <div className="mb-3 space-y-3">
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/venta/casa" className="block hover:underline">
             CASAS
           </a>
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/venta/departamento" className="block hover:underline">
             DEPARTAMENTOS
           </a>
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/venta/local" className="block hover:underline">
             LOCALES
           </a>
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/venta/galpon" className="block hover:underline">
             GALPONES
           </a>
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/venta/terreno" className="block hover:underline">
             TERRENOS
           </a>
         </div>
@@ -88,16 +88,16 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
     return (
       <div className="min-w-[200px] bg-one p-2 rounded-xl shadow-xl text-center text-base">
         <div className="mb-3 space-y-3">
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/alquiler/casa" className="block hover:underline">
             CASAS
           </a>
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/alquiler/departamento" className="block hover:underline">
             DEPARTAMENTOS
           </a>
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/alquiler/local" className="block hover:underline">
             LOCALES
           </a>
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/alquiler/galpon" className="block hover:underline">
             GALPONES
           </a>
         </div>
@@ -109,10 +109,10 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
     return (
       <div className="min-w-[200px] bg-one p-2 rounded-xl shadow-xl text-center text-base">
         <div className="mb-3 space-y-3">
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/temporario/casa" className="block hover:underline">
             CASAS
           </a>
-          <a href="#" className="block hover:underline">
+          <a href="/transaction/temporario/departamento" className="block hover:underline">
             DEPARTAMENTOS
           </a>
         </div>

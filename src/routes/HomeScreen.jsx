@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div className=''>
        <CarouselHome></CarouselHome>
-       <h2 className='text-center my-10 text-xl md:text-3xl text-one font-bold'>INMUEBLES DESTACADOS</h2>
+       <h2 className='text-center my-4 text-xl md:text-3xl text-one font-bold'>INMUEBLES DESTACADOS</h2>
        <ListContainer></ListContainer>
     </div>
   )

@@ -6,6 +6,7 @@ import youtube from '../assets/imgsocmed/youtube.png'
 import whatsapp from '../assets/imgsocmed/whatsapp.png'
 import { NavCenterMenu } from './NavCenterMenu'
 import contactData from '../assets/contactData.json'
+import { Link } from 'react-router-dom'
 
 export const NavBar = () => {
   return (
@@ -44,13 +45,13 @@ export const NavBar = () => {
                     {/*See if it´s posible to add a tabindex{0} to all collapse elements so they dont remain open when you tap outside them*/}
                     <li>
                         <details>
-                            <summary>VENTAS</summary>
+                            <summary>VENTAS</summary> 
                             <ul className="p-2">
-                                <li><a href="#">CASAS</a></li>
-                                <li><a href="#">DEPARTAMENTOS</a></li>
-                                <li><a href="#">LOCALES</a></li>
-                                <li><a href="#">GALPONES</a></li>
-                                <li><a href="#">TERRENOS</a></li>
+                                <li><a href="/transaction/venta/casa">CASAS</a></li>
+                                <li><a href="/transaction/venta/departamento">DEPARTAMENTOS</a></li>
+                                <li><a href="/transaction/venta/local">LOCALES</a></li>
+                                <li><a href="/transaction/venta/galpon">GALPONES</a></li>
+                                <li><a href="/transaction/venta/terreno">TERRENOS</a></li>
                             </ul>
                         </details>
                     </li>
@@ -58,10 +59,10 @@ export const NavBar = () => {
                         <details>
                             <summary>ALQUILERES</summary>
                             <ul className="p-2">
-                                <li><a href="#">CASAS</a></li>
-                                <li><a href="#">DEPARTAMENTOS</a></li>
-                                <li><a href="#">LOCALES</a></li>
-                                <li><a href="#">GALPONES</a></li>
+                                <li><a href="/transaction/alquiler/casa">CASAS</a></li>
+                                <li><a href="/transaction/alquiler/departamento">DEPARTAMENTOS</a></li>
+                                <li><a href="/transaction/alquiler/local">LOCALES</a></li>
+                                <li><a href="/transaction/alquiler/galpon">GALPONES</a></li>
                             </ul>
                         </details>
                     </li>
@@ -69,8 +70,8 @@ export const NavBar = () => {
                         <details>
                             <summary>TEMPORARIOS</summary>
                             <ul className="p-2">
-                                <li><a href="#">CASAS</a></li>
-                                <li><a href="#">DEPARTAMENTOS</a></li>
+                                <li><a href="/transaction/temporario/casa">CASAS</a></li>
+                                <li><a href="/transaction/temporario/departamento">DEPARTAMENTOS</a></li>
                             </ul>
                         </details>
                     </li>

@@ -28,9 +28,9 @@ export const Footer = () => {
         </nav>
         <nav>
             <h6 className="footer-title">LINKS</h6>
-            <a href="#" className="link link-hover">VENTAS</a>
-            <a href="#" className="link link-hover">ALQUILERES</a>
-            <a href="#" className="link link-hover">TEMPORARIOS</a>
+            <a href="/transaction/venta" className="link link-hover">VENTAS</a>
+            <a href="/transaction/alquiler" className="link link-hover">ALQUILERES</a>
+            <a href="/transaction/temporario" className="link link-hover">TEMPORARIOS</a>
             <div className='flex'>
                 <a href={contactData.instagram} target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ instagram } alt="Instagram" /></a>
                 <a href={contactData.facebook} target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ facebook } alt="Facebook" /></a>
@@ -50,9 +50,9 @@ export const Footer = () => {
             </div>
         </aside>
         <nav className="grid grid-flow-col gap-2 -my-12">
-            <a href="#" className="link link-hover">VENTAS</a>
-            <a href="#" className="link link-hover">ALQUILERES</a>
-            <a href="#" className="link link-hover">TEMPORARIOS</a>
+            <a href="/transaction/venta" className="link link-hover">VENTAS</a>
+            <a href="/transaction/alquiler" className="link link-hover">ALQUILERES</a>
+            <a href="/transaction/temporario" className="link link-hover">TEMPORARIOS</a>
         </nav>
         <nav className="grid grid-col gap-2 -mb-6 -mt-4">
             <a href={"https://wa.me/"+(contactData.celFeli).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celFeli}</a>

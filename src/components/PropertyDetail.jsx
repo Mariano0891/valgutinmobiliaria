@@ -19,7 +19,7 @@ export const PropertyDetail = ({property}) => {
         <div className="px-2">
           <PropertyIdentification property={property}/>   
         </div>
-        <div className="px-2">
+        <div className="px-2 z-0">
           <LocationMap property={property}/>   
         </div>
         <div className="px-2">

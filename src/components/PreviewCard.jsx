@@ -34,7 +34,7 @@ export const PreviewCard = ({id, images, creditAb, dollar, price, title, neighbo
     )
 
   return (
-    <div className='w-11/12 max-w-96 h-[482px] m-auto mb-6 rounded-2xl overflow-hidden border-solid border-2 shadow-lg group'>
+    <div className='w-11/12 max-w-96 h-[482px] m-auto my-6 rounded-2xl overflow-hidden border-solid border-2 shadow-lg group'>
         <div style={{backgroundImage: `url(${cardSlides[currentIndex]})`}}className='h-80 bg-center bg-cover grid relative'>
             {creditAb && <p className='text-white place-self-start bg-green-700 p-2 font-semibold rounded-tl-2xl m-2'>APTA CREDITO</p>}
             <Arrow direction="left" onClick={prevCardSlide} />

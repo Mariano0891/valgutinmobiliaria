@@ -12,31 +12,41 @@ export const ListContainer = () => {
 
     const [propertyList, setPropertyList] = useState([])
 
-    const {idType} = useParams ()
+    const {idTransaction, idType} = useParams ()
 
     const getProperties = () => {
         const db = getFirestore()
-        const collectionRef = collection(db, 'properties')
+        const collectionRef = query(collection(db, 'properties'), where ('active', "==", true))
         getDocs( collectionRef ).then(snapshot => {
             setPropertyList(snapshot.docs.map( property => ({id:property.id, ...property.data()})))
         })
     }
 
-    const getPropertiesByType = (idType) => {
+    const getPropertiesByTransaction = (idTransaction) => {
         const db = getFirestore()
-        const collectionRefById = query(collection(db, 'properties'), where ('type', '==', idType))
-        getDocs(collectionRefById).then(snapshot => {
+        const collectionRefByTransaction = query(collection(db, 'properties'), where ('transaction', '==', idTransaction), where ('active', "==", true))
+        getDocs(collectionRefByTransaction).then(snapshot => {
+            setPropertyList(snapshot.docs.map(property => ({id:property.id, ...property.data()})))
+        })
+    }
+
+    const getPropertiesByTransactionType = (idTransaction, idType) => {
+        const db = getFirestore()
+        const collectionRefByTransactionType = query(collection(db, 'properties'), where ('transaction', '==', idTransaction), where ('type', '==', idType), where ('active', "==", true))
+        getDocs(collectionRefByTransactionType).then(snapshot => {
             setPropertyList(snapshot.docs.map(property => ({id:property.id, ...property.data()})))
         })
     }
 
     useEffect(() => {
-      if (idType){
-        getPropertiesByType(idType)
-      } else{
+      if(idType) {
+        getPropertiesByTransactionType(idTransaction, idType)
+      } else if (idTransaction){
+        getPropertiesByTransaction(idTransaction)
+      } else {
         getProperties()
       }
-    }, [idType])
+    }, [idTransaction])
     
   return (
     <div>
