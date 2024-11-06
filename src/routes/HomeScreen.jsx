@@ -1,4 +1,3 @@
-import portada from '../assets/imagenesportada/sierrasPortada.jpg'
 import { CarouselHome } from '../components/CarouselHome'
 import { ListContainer } from '../components/ListContainer'
 import { PreviewCard } from '../components/PreviewCard'
