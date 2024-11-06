@@ -1,27 +1,9 @@
 import { useState, useEffect } from 'react'
-import cover1 from '../assets/imagenesportada/interiorLiving.jpg'
-import cover2 from '../assets/imagenesportada/interiorCocina.jpg'
-import cover3 from '../assets/imagenesportada/interiorComedor.jpg'
-import cover4 from '../assets/imagenesportada/interiorDormitorio.jpg'
-import cover5 from '../assets/imagenesportada/exteriorPatio.jpg'
-import cover6 from '../assets/imagenesportada/interiorLiving2.jpg'
-import cover7 from '../assets/imagenesportada/interiorCocina2.jpg'
-import cover8 from '../assets/imagenesportada/interiorComedor2.jpg'
-import cover9 from '../assets/imagenesportada/interiorDormitorio2.jpg'
 import { FrontFilter } from './FrontFilter'
 
 export const CarouselHome = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0)
-
-    {/*const slides = [
-        {url: "https://plus.unsplash.com/premium_photo-1670359036016-3fc5bde40db6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-        {url: "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-        {url: "https://images.unsplash.com/photo-1505409628601-edc9af17fda6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-        {url: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-        {url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-        {url: "https://images.unsplash.com/photo-1715358955542-83fcbd2884df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    ]*/}
 
     useEffect(() => {
         const slideAutoplay = setInterval(() => {
@@ -39,15 +21,15 @@ export const CarouselHome = () => {
     }
 
     const slides = [
-        {url: cover1},
-        {url: cover2},
-        {url: cover3},
-        {url: cover4},
-        {url: cover5},
-        {url: cover6},
-        {url: cover7},
-        {url: cover8},
-        {url: cover9},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FinteriorComedor.jpg?alt=media&token=b1031521-6fa4-4a9a-922c-666e8b280e7a"},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FinteriorCocina.jpg?alt=media&token=a34498d8-72ed-44da-97a3-a5f671dc89b2"},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FinteriorDormitorio.jpg?alt=media&token=0f711ccf-65b9-4d88-90e3-96b9f00b2cb8"},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FinteriorLiving.jpg?alt=media&token=19bc1128-c202-4e5c-84a9-7bce4b78217a"},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FexteriorPatio.jpg?alt=media&token=d648acac-59d2-464f-ae30-c88e3d4438f7"},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FinteriorCocina2.jpg?alt=media&token=f2f1b281-c2c1-4c88-a968-2363915f154f"},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FinteriorComedor2.jpg?alt=media&token=f603f2e0-6bd9-4ed0-a914-ed7eb98d9b85"},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FinteriorDormitorio2.jpg?alt=media&token=22c86460-b026-41d5-9dfa-f2440653bb9a"},
+        {url: "https://firebasestorage.googleapis.com/v0/b/valgut-propiedades.appspot.com/o/CarouselHome%2FinteriorLiving2.jpg?alt=media&token=16dd2364-2f8e-4d1b-81b7-47c7d9c3014b"},
     ]
 
     {/*const imageChanger = () => {
