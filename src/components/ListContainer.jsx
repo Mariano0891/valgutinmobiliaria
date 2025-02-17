@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import { trailData } from "../assets/mockData"
 import { RealEstateList } from "./RealEstateList"
 import { collection, getDocs, getFirestore, query, where} from 'firebase/firestore'
 import { Loader } from "./Loader"
@@ -12,6 +11,8 @@ export const ListContainer = () => {
 
     const [propertyList, setPropertyList] = useState([])
 
+    const [availableList, setAvailableList] = useState(false)
+
     const {idTransaction, idType} = useParams ()
 
     const getProperties = () => {
@@ -19,6 +20,7 @@ export const ListContainer = () => {
         const collectionRef = query(collection(db, 'properties'), where ('active', "==", true))
         getDocs( collectionRef ).then(snapshot => {
             setPropertyList(snapshot.docs.map( property => ({id:property.id, ...property.data()})))
+            setAvailableList(true)
         })
     }
 
@@ -27,6 +29,7 @@ export const ListContainer = () => {
         const collectionRefByTransaction = query(collection(db, 'properties'), where ('transaction', '==', idTransaction), where ('active', "==", true))
         getDocs(collectionRefByTransaction).then(snapshot => {
             setPropertyList(snapshot.docs.map(property => ({id:property.id, ...property.data()})))
+            setAvailableList(true)
         })
     }
 
@@ -35,6 +38,7 @@ export const ListContainer = () => {
         const collectionRefByTransactionType = query(collection(db, 'properties'), where ('transaction', '==', idTransaction), where ('type', '==', idType), where ('active', "==", true))
         getDocs(collectionRefByTransactionType).then(snapshot => {
             setPropertyList(snapshot.docs.map(property => ({id:property.id, ...property.data()})))
+            setAvailableList(true)
         })
     }
 
@@ -50,7 +54,7 @@ export const ListContainer = () => {
     
   return (
     <div>
-        { propertyList.length ? <RealEstateList propertyList={propertyList}/> : <Loader />}
+        { availableList ? <RealEstateList propertyList={propertyList}/> : <Loader />}
     </div>
   )
 }

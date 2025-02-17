@@ -79,6 +79,9 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
           <a href="/transaction/venta/terreno" className="block hover:underline">
             TERRENOS
           </a>
+          <a href="/transaction/venta/inversion" className="block hover:underline">
+            INVERSIONES
+          </a>
         </div>
       </div>
     );

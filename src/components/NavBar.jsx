@@ -1,4 +1,4 @@
-import logo from '../assets/logoProvisorio.png'
+import logo from '../assets/logoOpcional.jpeg'
 import { LanguageSel } from './LanguageSel'
 import instagram from '../assets/imgsocmed/instagram.png'
 import facebook from '../assets/imgsocmed/facebook.png'
@@ -12,12 +12,8 @@ export const NavBar = () => {
   return (
     <div className="navbar bg-one text-two h-28 sticky top-0 z-10">
         <div className="navbar-start">
-            <a href="/" className="text-lg flex items-center">
-                <img src={logo} alt="V&G" className="max-w-20 md:max-w-32"/>
-                <div className='grid justify-items-start'>
-                    <p className='font-semibold  text-sm md:text-lg'>VALGUT</p>
-                    <p className='text-xs md:text-base'>PROPIEDADES</p>
-                </div>
+            <a href="/" className="text-lg flex items-center mx-5">
+                <img src={logo} alt="Valgut" className="max-w-20 md:max-w-32"/>
             </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -52,6 +48,7 @@ export const NavBar = () => {
                                 <li><a href="/transaction/venta/local">LOCALES</a></li>
                                 <li><a href="/transaction/venta/galpon">GALPONES</a></li>
                                 <li><a href="/transaction/venta/terreno">TERRENOS</a></li>
+                                <li><a href="/transaction/venta/inversion">INVERSIONES</a></li>
                             </ul>
                         </details>
                     </li>
@@ -88,8 +85,7 @@ export const NavBar = () => {
                     </div>
                 </div>
                 <div className='flex my-2 text-sm'>
-                    <a href={"https://wa.me/"+(contactData.celFeli).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex link link-hover items-center'><img src={ whatsapp } alt="Whatsapp" className='max-h-5'/>+{contactData.celFeli}</a>
-                    <a href={"https://wa.me/"+(contactData.celPaola).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex ml-2 link link-hover items-center'><img src={ whatsapp } alt="Whatsapp" className='max-h-5'/>+{contactData.celPaola}</a>
+                    <a href={"https://wa.me/"+(contactData.celCorporate).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex link link-hover items-center'><img src={ whatsapp } alt="Whatsapp" className='max-h-5'/>+{contactData.celCorporate}</a>
                 </div>
             </div>
         </div>

@@ -19,7 +19,8 @@ TO DO:
 - Finish stablishing the filter component on homeScreen.
 - Set a component to stablish globaly phone numbers, emails and social media in order for any change on them would apply directly in every part of the code (done).
 - Stablish a manual image carrousel in the previewCard using useState as used in the CarouselHome component (done).
-- Use react-image-gallery for when we select to expand the image gallery. 
+- Use react-image-gallery for when we select to expand the image gallery.
+- Change the query parameters in a way that allows a property to be set un two diferent categories.
 
 
 

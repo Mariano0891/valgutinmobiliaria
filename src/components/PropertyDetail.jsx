@@ -32,8 +32,8 @@ export const PropertyDetail = ({property}) => {
           <Contact property={property}/>         
         </div>
       </div>        
-      <div className="hidden lg:grid grid-cols-3 justify-center gap-4 my-4">
-        <div className="col-span-2 grid justify-center gap-4 mx-4">
+      <div className="hidden lg:grid grid-cols-5 justify-center gap-4 my-4">
+        <div className="col-span-3 grid justify-center gap-4 mx-4">
           <div className="">
             <DetailCarousel images={property.images} video={property.video}/>
           </div>
@@ -44,7 +44,7 @@ export const PropertyDetail = ({property}) => {
             <Description property={property}/>         
           </div>
         </div>
-        <div className="grid justify-center gap-4 content-start mt-[30px] mx-2">
+        <div className="grid col-span-2 justify-center gap-4 content-start mt-[30px] mx-2">
           <div className="">
             <PropertyIdentification property={property}/>   
           </div>

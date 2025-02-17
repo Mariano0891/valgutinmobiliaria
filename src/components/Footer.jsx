@@ -1,4 +1,4 @@
-import logo from '../assets/logoProvisorio.png'
+import logo from '../assets/logoOpcional.jpeg'
 import whatsapp from '../assets/imgsocmed/whatsapp.png'
 import mail from '../assets/imgsocmed/mail.png'
 import instagram from '../assets/imgsocmed/instagram.png'
@@ -13,41 +13,32 @@ export const Footer = () => {
     <footer className="footer bg-one text-two p-4 hidden md:flex justify-around">
         <aside className="grid-flow-col items-center my-auto">
             <a href="/" className="">
-                <img src={logo} alt="V&G" className="max-w-32"/>
+                <img src={logo} alt="Valgut" className="max-w-32"/>
             </a>
-            <div className='grid justify-items-start'>
-                <h4>VALGUT</h4>
-                <p>PROPIEDADES</p>
-            </div>
         </aside>
         <nav>
             <h6 className="footer-title">CONTACTO</h6>
-            <a href={"https://wa.me/"+(contactData.celFeli).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celFeli}</a>
-            <a href={"https://wa.me/"+(contactData.celPaola).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celPaola}</a>
+            <a href={"https://wa.me/"+(contactData.celCorporate).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celCorporate}</a>
             <a href={"mailto:"+contactData.email+"?subject=Consulta general"} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ mail } alt="mail" className='max-h-6'/>{contactData.email}</a>
-        </nav>
-        <nav>
-            <h6 className="footer-title">LINKS</h6>
-            <a href="/transaction/venta" className="link link-hover">VENTAS</a>
-            <a href="/transaction/alquiler" className="link link-hover">ALQUILERES</a>
-            <a href="/transaction/temporario" className="link link-hover">TEMPORARIOS</a>
             <div className='flex'>
                 <a href={contactData.instagram} target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ instagram } alt="Instagram" /></a>
                 <a href={contactData.facebook} target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ facebook } alt="Facebook" /></a>
                 <a href={contactData.youtube} target="_blank" rel="noopener noreferrer" className='mr-2 max-w-6'><img src={ youtube } alt="Youtube" /></a>
             </div>
         </nav>
+        <nav>
+            <h6 className="footer-title">LINKS</h6>
+            <a href="/transaction/venta" className="link link-hover">VENTAS</a>
+            <a href="/transaction/alquiler" className="link link-hover">ALQUILERES</a>
+            <a href="/transaction/temporario" className="link link-hover">TEMPORARIOS</a>
+        </nav>
     </footer>
     {/*sm footer*/}
     <footer className="footer footer-center bg-one text-two p-4 md:hidden">
         <aside className="grid-flow-col items-center -mb-2">
             <a href="/" className="">
-                <img src={logo} alt="V&G" className="max-w-20"/>
+                <img src={logo} alt="Valgut" className="max-w-20"/>
             </a>
-            <div className='grid justify-items-start'>
-                <h4>VALGUT</h4>
-                <p>PROPIEDADES</p>
-            </div>
         </aside>
         <nav className="grid grid-flow-col gap-2 -my-12">
             <a href="/transaction/venta" className="link link-hover">VENTAS</a>
@@ -55,14 +46,13 @@ export const Footer = () => {
             <a href="/transaction/temporario" className="link link-hover">TEMPORARIOS</a>
         </nav>
         <nav className="grid grid-col gap-2 -mb-6 -mt-4">
-            <a href={"https://wa.me/"+(contactData.celFeli).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celFeli}</a>
-            <a href={"https://wa.me/"+(contactData.celPaola).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celPaola}</a>
+            <a href={"https://wa.me/"+(contactData.celCorporate).replace(/\s+/g, '')} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ whatsapp } alt="Whatsapp" className='max-h-6'/>{contactData.celCorporate}</a>
             <a href={"mailto:"+contactData.email+"?subject=Consulta general"} target="_blank" rel="noopener noreferrer" className='flex items-center link link-hover'><img src={ mail } alt="mail" className='max-h-6'/>{contactData.email}</a>
         </nav>
 
         <nav>
             <div className="grid grid-flow-col gap-4">
-                <a href="" target="_blank" rel="noopener noreferrer" className='max-w-6'><img src={ instagram } alt="Instagram" /></a>
+                <a href={contactData.instagram} target="_blank" rel="noopener noreferrer" className='max-w-6'><img src={ instagram } alt="Instagram" /></a>
                 <a href="" target="_blank" rel="noopener noreferrer" className='max-w-6'><img src={ facebook } alt="Facebook" /></a>
                 <a href="" target="_blank" rel="noopener noreferrer" className='max-w-6'><img src={ youtube } alt="Youtube" /></a>
             </div>

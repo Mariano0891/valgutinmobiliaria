@@ -54,8 +54,8 @@ export const DetailCarousel = ({images, video}) => {
             </div>
             {video.length > 0 &&
                 <div onClick={() => showGallery("video")} data-gallery={gallery==="video"} className='w-1/2 h-full bg-white flex justify-evenly items-center cursor-pointer data-[gallery="true"]:bg-five data-[gallery="true"]:cursor-default'>
-                <RxVideo className='text-xl'/>
-                <p className='text-xs'>Videos</p>
+                    <RxVideo className='text-xl'/>
+                    <p className='text-xs'>Videos</p>
                 </div>
             }
         </div>

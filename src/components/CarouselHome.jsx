@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { FrontFilter } from './FrontFilter'
 
 export const CarouselHome = () => {
 
@@ -43,10 +42,7 @@ export const CarouselHome = () => {
     setInterval(imageChanger, 10000)*/}
 
   return (
-    <div className="max-w-[1400px] h-[600px] w-full m-auto group">
-        <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-full bg-center bg-cover duration-500 ease-in-out flex items-center">
-            <FrontFilter/>
-        </div>
+    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-full bg-center bg-cover duration-500 ease-in-out flex items-center">
     </div>
   )
 }
